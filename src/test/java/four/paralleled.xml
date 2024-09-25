@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite  thread-count="5" name="suite1" parallel="tests">
+    <test name="test1">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"/>
+        <classes>
+            <class name="four.ParallelDemo"/>
+        </classes>
+    </test>
+
+    <test name="test2">
+        <parameter name="browser" value="edge"/>
+        <parameter name="url" value="https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"/>
+        <classes>
+            <class name="four.ParallelDemo"/>
+        </classes>
+    </test>
+</suite>

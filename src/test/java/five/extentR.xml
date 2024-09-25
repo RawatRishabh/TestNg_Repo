@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="my_suite">
+    <listeners>
+        <listener class-name="five.Reports"/>
+    </listeners>
+    <test  name="my_test">
+        <classes>
+            <class name="five.Orange"/>
+        </classes>
+    </test>
+</suite>
